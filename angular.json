@@ -64,6 +64,9 @@
             },
             "development": {
               "browserTarget": "airport-manager:build:development"
+            }, 
+            "options": {
+                "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"

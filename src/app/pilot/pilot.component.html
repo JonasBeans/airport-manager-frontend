@@ -1,0 +1,8 @@
+<p>pilot works!</p>
+<div>
+    <ul>
+        <li *ngFor="let pilot of pilots">
+            <a routerLink="/pilot/detail/{{pilot.id}}">{{pilot.first_name}}</a>
+        </li>
+    </ul>
+</div>

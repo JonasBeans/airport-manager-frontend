@@ -1,0 +1,20 @@
+<h2>Pilot Details</h2>
+<div class="infoGrid">
+    <p>id: {{pilot?.id}}</p>
+    <p class="info">first name: {{pilot?.first_name}}</p>
+    <p>last name: {{pilot?.last_name}}</p>
+</div>
+<div class="updateFormBlock">
+    <h3>Change pilot info</h3>
+    <button type="button" (click)="save()">save pilot info</button>
+    <div *ngIf="updatePilot">
+        <div class="updateForm">
+            <label for="pilot-firstName">First Name:</label>
+            <input type="text" id="pilot-firstName" [(ngModel)]="updatePilot.first_name" placeholder="first name">
+        </div>
+        <div class="updateForm">
+            <label for="pilotName">Last Name:</label>
+            <input type="text" id="pilotName" [(ngModel)]="updatePilot.last_name" placeholder="last name">
+        </div>
+    </div>
+</div>
